@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohammad Baydoun | Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f8fafc;color:#222;line-height:1.6}
+.container{width:90%;max-width:1150px;margin:auto}
+header{background:#123b6d;color:#fff;padding:80px 0;text-align:center}
+header h1{font-size:48px;margin-bottom:10px}
+header p{margin:8px 0}
+.btn{
+display:inline-block;
+margin:10px 5px;
+padding:12px 24px;
+background:#fff;
+color:#123b6d;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+section{padding:60px 0}
+h2{
+color:#123b6d;
+margin-bottom:25px;
+padding-bottom:10px;
+border-bottom:2px solid #ddd;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+.card{
+background:#fff;
+border:1px solid #ddd;
+border-radius:10px;
+padding:20px;
+}
+.project-image{
+    width:100%;
+    aspect-ratio:16/9;
+    overflow:hidden;
+    border-radius:8px;
+    
+}
+
+.project-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.project h3{color:#123b6d;margin-bottom:10px}
+.project p{margin-bottom:10px}
+.project a{
+display:inline-block;
+margin-right:10px;
+color:#123b6d;
+font-weight:bold;
+text-decoration:none;
+}
+footer{
+background:#123b6d;
+color:#fff;
+text-align:center;
+padding:25px;
+}
+.project{
+    display:flex;
+    flex-direction:column;
+}
+
+.project a{
+    margin-top:auto;
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+    <img src="images/myprofile.jpeg" alt="Mohammad Baydoun" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; margin-bottom: 15px;">
+<!-- زر تبديل اللغة المضاف في الـ HTML فقط دون المساس بالـ CSS -->
+<div style="text-align: right; margin-bottom: -20px;">
+    <button id="langBtn" onclick="toggleLanguage()" style="background: #fff; color: #123b6d; border: none; padding: 6px 12px; font-weight: bold; border-radius: 4px; cursor: pointer;">EN</button>
+</div>
+
+<h1>Mohammad Baydoun</h1>
+<p id="header-p1">Wirtschaftsinformatik (MIS) Student | Java-Entwickler | Webentwicklung & Datenbanken</p>
+<p id="header-p2">Angestrebter Fachinformatiker für Anwendungsentwicklung</p>
+
+<a class="btn" href="#" id="cv-btn">CV Herunterladen</a>
+<a class="btn" href="https://github.com/modibodi057-collab" target="_blank">GitHub</a>
+</div>
+</header>
+
+<section>
+<div class="container">
+<h2 id="about-title">Über mich</h2>
+<p id="about-text">
+Motivierter Student der Wirtschaftsinformatik (MIS) mit großem Interesse an Softwareentwicklung, Backend-Programmierung und Datenbanktechnologien. Durch Selbststudium und akademische Projekte habe ich praktische Erfahrungen in Java, SQL, Webentwicklung und objektorientierter Programmierung gesammelt. Ich verbessere kontinuierlich meine technischen und sprachlichen Fähigkeiten und bereite mich auf eine Ausbildung als Fachinformatiker für Anwendungsentwicklung vor.
+</p>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2 id="skills-title">Technische Fähigkeiten</h2>
+
+<div class="grid">
+<div class="card"><b id="skill-p1">Programmierung</b><br>Java<br>JavaScript</div>
+<div class="card"><b id="skill-p2">Webentwicklung</b><br>HTML5<br>CSS3</div>
+<div class="card"><b id="skill-p3">Datenbanken</b><br>SQL<br>SQLite<br>MS Access</div>
+<div class="card"><b id="skill-p4">Tools & Werkzeuge</b><br>Git<br>GitHub<br>JDBC</div>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2 id="projects-title">Projekte</h2>
+
+<div class="grid">
+
+<div class="card project">
+<div class="project-image"> <img src="images/menu.png" alt=""></div>
+<h3>Student Management System</h3>
+<p><b>Java | JDBC | SQLite</b></p>
+<p id="proj-desc1">
+Datenbankgestützte Studentenverwaltungsanwendung mit CRUD-Operationen, SQL-Abfragen, Prepared Statements und objektorientierter Architektur.
+</p>
+<a href="https://github.com/modibodi057-collab/Student-Managment-system" target="_blank">Repository</a>
+</div>
+
+<div class="card project">
+<div class="project-image"> <img src="images/www.png" alt=""></div>
+<h3>Ausbildung Dashboard Application</h3>
+<p><b>HTML | CSS | JavaScript</b></p>
+<p id="proj-desc2">
+Dashboard zur Verfolgung von Ausbildungsbewerbungen und zur Organisation von Karrieremöglichkeiten.
+</p>
+<a href="https://modibodi057-collab.github.io/Ausbildung-Application-Tracker/" target="_blank">Live Demo</a>
+</div>
+
+<div class="card project">
+<div class="project-image"> <img src="images/weather.png" alt=""></div>
+<h3>Real-Time Weather Web App</h3>
+<p><b>JavaScript | API</b></p>
+<p id="proj-desc3">
+Wetteranwendung unter Verwendung externer APIs und asynchronem JavaScript.
+</p>
+<a href="https://modibodi057-collab.github.io/weather-app/" target="_blank">Live Demo</a>
+</div>
+
+<div class="card project">
+<div class="project-image">  <img src="images/store1.jpeg" alt="Level Up Store"></div>
+<h3>Level Up Store</h3>
+<p><b>HTML | CSS | JavaScript</b></p>
+<p id="proj-desc4">
+E-Commerce-Schnittstelle mit Gaming-Thema, fokussiert auf UI-Design und Responsive Webdesign.
+</p>
+<a href="https://modibodi057-collab.github.io/Levelup-store/" target="_blank">Live Demo</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2 id="edu-title">Bildungsweg</h2>
+
+<div class="card">
+<h3>Management Information Systems (MIS)</h3>
+<p>IPNET – National Pedagogical Institute, Lebanon</p>
+<p id="edu-p1">2026 – Gegenwart</p>
+</div>
+
+<br>
+
+<div class="card">
+<h3 id="edu-p2">Allgemeines Abitur (High School)</h3>
+<p>Tyre, Lebanon</p>
+<p>2020 – 2023</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2 id="lang-title">Sprachkenntnisse</h2>
+
+<div class="grid">
+<div class="card"><b id="lang-n1">Arabisch</b><br id="lang-v1">Muttersprache</div>
+<div class="card"><b id="lang-n2">Englisch</b><br id="lang-v2">Gute Kenntnisse (B1 / A2)</div>
+<div class="card"><b id="lang-n3">Deutsch</b><br id="lang-v3">A2 (derzeit im B1-Kurs)</div>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2 id="contact-title">Kontakt</h2>
+
+<p><b>Email:</b> mohammadbaydoun015@gmail.com</p>
+<p><b>GitHub:</b> modibodi057-collab</p>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Mohammad Baydoun</p>
+</footer>
+
+<script>
+// جافا سكريبت آمنة تقوم فقط باستبدال النصوص البرمجية دون تداخل مع الـ CSS
+let currentLang = 'de';
+
+function toggleLanguage() {
+    const btn = document.getElementById('langBtn');
+    
+    if (currentLang === 'de') {
+        // التحويل إلى الإنجليزية
+        document.getElementById('header-p1').textContent = "MIS Student | Java Developer | Web Development & Databases";
+        document.getElementById('header-p2').textContent = "Aspiring Fachinformatiker für Anwendungsentwicklung";
+        document.getElementById('cv-btn').textContent = "Download CV";
+        document.getElementById('about-title').textContent = "About Me";
+        document.getElementById('about-text').textContent = "Motivated Management Information Systems (MIS) student with a strong interest in software development, backend programming, and database technologies. Through independent learning and academic projects, I have developed practical experience in Java, SQL, web development, and object-oriented programming. I am continuously improving my technical and language skills while preparing for an Ausbildung as a Fachinformatiker für Anwendungsentwicklung.";
+        document.getElementById('skills-title').textContent = "Technical Skills";
+        document.getElementById('skill-p1').textContent = "Programming";
+        document.getElementById('skill-p2').textContent = "Web Development";
+        document.getElementById('skill-p3').textContent = "Databases";
+        document.getElementById('skill-p4').textContent = "Tools";
+        document.getElementById('projects-title').textContent = "Projects";
+        document.getElementById('proj-desc1').textContent = "Database-driven student management application with CRUD operations, SQL queries, prepared statements, and object-oriented architecture.";
+        document.getElementById('proj-desc2').textContent = "Dashboard for tracking Ausbildung applications and organizing opportunities.";
+        document.getElementById('proj-desc3').textContent = "Weather application using external APIs and asynchronous JavaScript.";
+        document.getElementById('proj-desc4').textContent = "Gaming-themed e-commerce interface focused on UI and responsive design.";
+        document.getElementById('edu-title').textContent = "Education";
+        document.getElementById('edu-p1').textContent = "2026 – Present";
+        document.getElementById('edu-p2').textContent = "General High School Diploma";
+        document.getElementById('lang-title').textContent = "Languages";
+        document.getElementById('lang-n1').textContent = "Arabic";
+        document.getElementById('lang-v1').previousSibling.textContent = "Arabic"; document.getElementById('lang-v1').nextSibling.textContent = "Native";
+        document.getElementById('lang-n2').textContent = "English";
+        document.getElementById('lang-v2').previousSibling.textContent = "English"; document.getElementById('lang-v2').nextSibling.textContent = "Good (B1 / A2)";
+        document.getElementById('lang-n3').textContent = "German";
+        document.getElementById('lang-v3').previousSibling.textContent = "German"; document.getElementById('lang-v3').nextSibling.textContent = "A2 (Currently studying B1)";
+        document.getElementById('contact-title').textContent = "Contact";
+        
+        btn.textContent = "DE";
+        currentLang = 'en';
+    } else {
+        // العودة إلى الألمانية
+        document.getElementById('header-p1').textContent = "Wirtschaftsinformatik (MIS) Student | Java-Entwickler | Webentwicklung & Datenbanken";
+        document.getElementById('header-p2').textContent = "Angestrebter Fachinformatiker für Anwendungsentwicklung";
+        document.getElementById('cv-btn').textContent = "CV Herunterladen";
+        document.getElementById('about-title').textContent = "Über mich";
+        document.getElementById('about-text').textContent = "Motivierter Student der Wirtschaftsinformatik (MIS) mit großem Interesse an Softwareentwicklung, Backend-Programmierung und Datenbanktechnologien. Durch Selbststudium und akademische Projekte habe ich praktische Erfahrungen in Java, SQL, Webentwicklung und objektorientierter Programmierung gesammelt. Ich verbessere kontinuierlich meine technischen und sprachlichen Fähigkeiten und bereite mich auf eine Ausbildung als Fachinformatiker für Anwendungsentwicklung vor.";
+        document.getElementById('skills-title').textContent = "Technische Fähigkeiten";
+        document.getElementById('skill-p1').textContent = "Programmierung";
+        document.getElementById('skill-p2').textContent = "Webentwicklung";
+        document.getElementById('skill-p3').textContent = "Datenbanken";
+        document.getElementById('skill-p4').textContent = "Tools & Werkzeuge";
+        document.getElementById('projects-title').textContent = "Projekte";
+        document.getElementById('proj-desc1').textContent = "Datenbankgestützte Studentenverwaltungsanwendung mit CRUD-Operationen, SQL-Abfragen, Prepared Statements und objektorientierter Architektur.";
+        document.getElementById('proj-desc2').textContent = "Dashboard zur Verfolgung von Ausbildungsbewerbungen und zur Organisation von Karrieremöglichkeiten.";
+        document.getElementById('proj-desc3').textContent = "Wetteranwendung unter Verwendung externer APIs und asynchronem JavaScript.";
+        document.getElementById('proj-desc4').textContent = "E-Commerce-Schnittstelle mit Gaming-Thema, fokussiert auf UI-Design und Responsive Webdesign.";
+        document.getElementById('edu-title').textContent = "Bildungsweg";
+        document.getElementById('edu-p1').textContent = "2026 – Gegenwart";
+        document.getElementById('edu-p2').textContent = "Allgemeines Abitur (High School)";
+        document.getElementById('lang-title').textContent = "Sprachkenntnisse";
+        document.getElementById('lang-n1').textContent = "Arabisch";
+        document.getElementById('lang-v1').previousSibling.textContent = "Arabisch"; document.getElementById('lang-v1').nextSibling.textContent = "Muttersprache";
+        document.getElementById('lang-n2').textContent = "Englisch";
+        document.getElementById('lang-v2').previousSibling.textContent = "Englisch"; document.getElementById('lang-v2').nextSibling.textContent = "Gute Kenntnisse (B1 / A2)";
+        document.getElementById('lang-n3').textContent = "Deutsch";
+        document.getElementById('lang-v3').previousSibling.textContent = "Deutsch"; document.getElementById('lang-v3').nextSibling.textContent = "A2 (derzeit im B1-Kurs)";
+        document.getElementById('contact-title').textContent = "Kontakt";
+        
+        btn.textContent = "EN";
+        currentLang = 'de';
+    }
+}
+</script>
+
+</body>
+</html>
